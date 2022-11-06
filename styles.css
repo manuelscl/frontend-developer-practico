@@ -26,7 +26,10 @@ nav {
 }
 .menu {
     display: none;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> 3a699c233226945ac8d3ab82564859019b9aefcb
 }
 .logo {
     width: 100px;
