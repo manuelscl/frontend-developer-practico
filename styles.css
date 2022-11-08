@@ -1,4 +1,10 @@
 /* CSS General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -91,7 +97,6 @@ position: absolute;
     top: 60px;
     right: 60px;
     background: var(--white);
-    width: 100px;
     height: auto;
     border: 1px solid var(--very-light-pink);
     border-radius: 6px;
@@ -126,9 +131,11 @@ position: absolute;
 
 /* Mobile menu */
 .mobile-menu {
+    width: 100%;
     background: var(--white);
     position: absolute;
     top: 60px;
+    left: 0;
     padding: 24px;
 }
 .mobile-menu a {
@@ -161,7 +168,7 @@ position: absolute;
 .product-detail {
   background: var(--white);
   width: 360px;
-  padding: 0 24px 24px;
+  padding: 24px 24px;
   box-sizing: border-box;
   position: absolute;
   right: 0;
@@ -234,6 +241,71 @@ position: absolute;
   height: 50px;
 }
 
+/* Aside-secondary  */
+.product-detail-secondary {
+  width: 360px;
+  padding-bottom: 24px;
+  position: absolute;
+  right: 0;
+}
+.product-detail-close {
+  background: var(--white);
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+  padding: 12px;
+  border-radius: 50%;
+}
+.product-detail-close:hover {
+  cursor: pointer;
+}
+.product-detail-secondary > img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px;
+}
+.product-info-secondary {
+  margin: 24px 24px 0 24px;
+}
+.product-info-secondary p:nth-child(1) {
+  font-weight: bold;
+  font-size: var(--md);
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.product-info-secondary p:nth-child(2) {
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+.product-info-secondary p:nth-child(3) {
+  color: var(--very-light-pink);
+  font-size: var(--sm);
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+.product-info-secondary .primary-button {
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
+}
+.product-info-secondary .add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Product list */
 .cards-container {
   display: grid;
@@ -303,6 +375,9 @@ position: absolute;
     .product-card img {
       width: 140px;
       height: 140px;
+    }
+    .product-detail-secondary {
+      width: 100%;
     }
 }
 @media (min-width: 641px) {
