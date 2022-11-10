@@ -106,29 +106,27 @@ const productList = [];
 productList.push({
     name: 'Mountain Bike',
     price: 700,
-    image: '/images/mountain-bike-yellow.webp'
-    // image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""',
-
+    image: 'images/mountain-bike-yellow.webp'
 });
 productList.push({
     name: 'Big Nine',
     price: 799,
-    image: '/images/big-nine-300-2021.jpg'
+    image: 'images/big-nine-300-2021.jpg'
 });
 productList.push({
     name: 'BH Expert',
     price: 915,
-    image: '/images/bike-bhExpert.jpg'
+    image: 'images/bike-bhExpert.jpg'
 });
 productList.push({
     name: 'GT Street Performer',
     price: 720,
-    image: '/images/gt-street-performer-29.jpg'
+    image: 'images/gt-street-performer-29.jpg'
 });
 productList.push({
     name: 'Conor Rave',
     price: 405,
-    image: '/images/conor-rave.jpg'
+    image: 'images/conor-rave.jpg'
 });
 
 
